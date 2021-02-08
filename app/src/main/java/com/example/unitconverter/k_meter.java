@@ -33,7 +33,7 @@ public class k_meter extends AppCompatActivity {
         res = findViewById(R.id.result);
 
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String tmp_input1 = inp1.getText().toString();
@@ -41,9 +41,9 @@ public class k_meter extends AppCompatActivity {
 
                 float input1, in_m;
                 input1 = parseFloat(tmp_input1);
-                in_m = (float) (input1 / 1000);
+                in_m = (float) (input1 * 1000);
 
-                res.setText(tmp_input1 + " Km = " + Float.toString(in_m) + " Meter");
+                res.setText(tmp_input1 + " Meter = " + Float.toString(in_m) + " Km");
                 res.setBackgroundResource(R.color.lightest);
 
 
@@ -52,7 +52,7 @@ public class k_meter extends AppCompatActivity {
             }
         });
 
-        btn2.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String tmp_input1 = inp1.getText().toString();
@@ -60,10 +60,10 @@ public class k_meter extends AppCompatActivity {
 
                 float input1 = parseFloat(tmp_input1);
                 float in_km;
-                in_km = (float) (input1 * 1000);
+                in_km = (float) (input1 / 1000);
 
                 res.setText(Float.toString(in_km));
-                res.setText(tmp_input1 + " Meter = " + Float.toString(in_km) + " Km");
+                res.setText(tmp_input1 + " Km = " + Float.toString(in_km) + " Meter");
                 res.setBackgroundResource(R.color.lighter);
 
 

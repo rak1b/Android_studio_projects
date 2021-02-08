@@ -89,7 +89,8 @@
         android:padding="20dp"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="13dp"
+
         app:layout_constraintEnd_toEndOf="@id/input1"
         app:layout_constraintStart_toStartOf="@id/input1"
         app:layout_constraintTop_toBottomOf="@id/btn1"
