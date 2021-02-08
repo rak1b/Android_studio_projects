@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="f_to_m">Feet - Meter Converter</string>
+    <string name="m_to_c">Meter - CM Converter</string>
+    <string name="km_to_m">KM - Meter Converter</string>
+    <string name="feet_meter_hint">Feet Or Meter:</string>
+    <string name="meter_cm_hint">Meter Or Centimeter</string>
+    <string name="meter_km_hint">Meter Or Kilometer</string>
+    <string name="meter">Meter</string>
+    <string name="cm">Centimeter</string>
+    <string name="km">Kilometer</string>
+    <string name="feet">Feet</string>
+    <string name="cm_short">Cm</string>
+    <string name="km_short">Km</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_color"
+        android:padding="20dp"
+        android:text="Unit Converter"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/aldrich"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/F_M_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="@string/f_to_m"
+        android:textSize="15dp"
+        android:paddingBottom="40dp"
+        android:paddingTop="40dp"
+        android:background="@color/light"
+        android:textColor="@color/white"
+        android:paddingEnd="40dp"
+        android:paddingStart="40dp"
+        android:fontFamily="@font/aldrich"
+
+
+
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/M_C_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/lighter"
+        android:paddingBottom="40dp"
+        android:paddingTop="40dp"
+        android:text="@string/m_to_c"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/F_M_btn"
+        app:layout_constraintRight_toRightOf="@id/F_M_btn"
+        app:layout_constraintTop_toBottomOf="@id/F_M_btn"
+        android:layout_marginTop="40dp"
+        android:paddingEnd="40dp"
+        android:paddingStart="40dp"
+        android:fontFamily="@font/aldrich"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/KM_M_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/M_C_btn"
+        app:layout_constraintLeft_toLeftOf="@id/M_C_btn"
+        app:layout_constraintRight_toRightOf="@id/M_C_btn"
+        android:text="@string/km_to_m"
+        android:textSize="15dp"
+        android:paddingBottom="40dp"
+        android:paddingTop="40dp"
+        android:background="@color/lightest"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:paddingEnd="40dp"
+        android:paddingStart="40dp"
+        android:fontFamily="@font/aldrich"
+
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".k_meter">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aldrich"
+
+
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/lighter"
+        android:fontFamily="@font/aldrich"
+        android:hint="@string/meter_km_hint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:inputType="numberSigned|numberDecimal"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/aldrich"
+
+        android:background="@color/header_color"
+        android:text="@string/km_short"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/btn2"
+
+        app:layout_constraintStart_toStartOf="@+id/input1"
+        app:layout_constraintTop_toBottomOf="@id/input1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input1"
+
+        app:layout_constraintStart_toEndOf="@id/btn1"
+        app:layout_constraintEnd_toEndOf="@id/input1"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:background="@color/header_color"
+        android:text="@string/meter"
+        android:textSize="20sp"
+        android:fontFamily="@font/aldrich"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/input1"
+        app:layout_constraintStart_toStartOf="@id/input1"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/aldrich"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
